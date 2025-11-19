@@ -4,20 +4,12 @@ A full fitness tracking web app using HTML, CSS, JavaScript, LocalStorage, and C
 The app allows users to log steps, workout minutes, and calories.  
 Data is saved locally and visualized through animated charts.
 
----
-
-    Demo
-(Add screenshot)
-
----
-      Description
+Description
 The Fitness Tracker App helps users track their daily activity.  
 Entries include steps, minutes, and calories burned.  
 The dashboard updates dynamically with progress bars, animated numbers, and a weekly bar chart drawn on canvas.
 
----
-
-      Features
+  Features
 - Add, edit, and delete fitness records  
 - Saves data using LocalStorage  
 - Animated dashboard stats  
@@ -27,7 +19,7 @@ The dashboard updates dynamically with progress bars, animated numbers, and a we
 
 ---
 
-     Technologies Used
+Technologies Used
 - HTML  
 - CSS  
 - JavaScript  
@@ -36,10 +28,11 @@ The dashboard updates dynamically with progress bars, animated numbers, and a we
 
 ---
 
-    How to Run
+How to Run
 Open:
 
 
 Contact/developer
 Name: Ahmed Ragab
+
 Linkedin: https://www.linkedin.com/in/ahmed-ragab-182163296
