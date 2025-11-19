@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #dfe6ff, #39a2b4);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 550px;
+    background: #a7bccb;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(9, 56, 176, 0.1);
+    text-align: center;
+    transition: .3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.15);
+}
+
+.title {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+}
+
+.flashcard {
+    background: #fafafa;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 4px solid #206c8a;
+    margin-bottom: 20px;
+    min-height: 120px;
+    transition: .3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.flashcard:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(26, 15, 175, 0.3);
+}
+
+.flashcard:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 80%;
+    height: 100%;
+    background: rgba(137, 178, 187, 0.35);
+    transform: skewX(-25deg);
+    animation: shine 0.7s forwards;
+}
+
+@keyframes shine {
+    100% { left: 150%; }
+}
+
+.hidden {
+    display: none;
+}
+
+.buttons button, #add, #delete {
+    padding: 12px 20px;
+    background: #6a5acd;
+    color: #fff;
+    border: none;
+    margin: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.buttons button:hover, #add:hover {
+    transform: scale(1.05);
+    background: #5b4ec4;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+}
+
+.delete-btn:hover {
+    background: #e63e3e;
+}
+
+.input-box input {
+    width: 85%;
+    padding: 12px;
+    margin: 7px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
